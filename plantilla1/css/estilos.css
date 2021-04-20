@@ -58,14 +58,17 @@ nav > a:hover {
   width: 100%;
 }
 
+/*general*/
+.general-padding {
+  padding: 70px 0px 80px;
+}
+
 /* SECION ACERCA DE*/
 .acerca {
     background-color: #f9f9f9;
   }
 
-  .acerca-padding {
-    padding: 70px 0px 80px;
-  }
+ 
 
   .section-headline h2 {
     display: inline-block;
@@ -97,4 +100,40 @@ nav > a:hover {
   }
 
 
+  .estilo-simple ul li {
+    color: rgb(37, 37, 37);
+    display: block;
+    padding: 5px 0;
+  }
+
+    /*servicios*/
+
+  .servicios-icono {
+    color: #444;
+    display: inline-block;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
   
+  .section-headline.servicio-cabecera > h2 {
+    margin-bottom: 25px;
+  }
+
+  .section-headline.servicio-cabecera > h2 {
+    margin-bottom: 25px;
+  }
+  
+  .serv-detalle {
+    padding-top: 40px;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .serv-detalle:hover h4, .serv-detalle:hover .servicios-icono {
+    color: #3EC1D5;
+  }
+  
+
+  
+  
+ 
