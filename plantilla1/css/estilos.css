@@ -70,7 +70,7 @@ nav > a:hover {
 
  
 
-  .section-headline h2 {
+  .general-section h2 {
     display: inline-block;
     font-size: 40px;
     font-weight: 600;
@@ -79,7 +79,7 @@ nav > a:hover {
     text-transform: capitalize;
   }
   
-  .section-headline h2::after {
+  .general-section h2::after {
     border: 1px solid #333;
     bottom: -20px;
     content: "";
@@ -90,7 +90,7 @@ nav > a:hover {
     width: 50%;
   }
  
-  .section-headline h2 {
+  .general-section h2 {
     font-size: 30px !important;
   }
 
@@ -116,11 +116,11 @@ nav > a:hover {
     margin-bottom: 20px;
   }
   
-  .section-headline.servicio-cabecera > h2 {
+  .general-section.servicio-cabecera > h2 {
     margin-bottom: 25px;
   }
 
-  .section-headline.servicio-cabecera > h2 {
+  .general-section.servicio-cabecera > h2 {
     margin-bottom: 25px;
   }
   
@@ -134,6 +134,21 @@ nav > a:hover {
   }
   
 
-  
-  
- 
+/*EQUIPO*/
+
+
+.card-body:hover h4, .card-body:hover .servicios-icono {
+  color: #3EC1D5;
+}
+
+
+/*CONTACTO*/
+.footer-cont{
+  flex-direction: column;
+  border: none;
+}
+
+.footer-detalle{
+  margin-bottom: 20px;
+  text-align: center;
+}
