@@ -1,35 +1,22 @@
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
+  margin: 0;
+  padding: 0;
   background: #F1F1F1;
-  font-family: 'open sans', sans-serif;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  width: 100%;
+  height: 100%;
+  font-family: 'open sans';
+  letter-spacing: 0.03em;
+  line-height: 1.6;
 }
 
 body.dark {
   background: #111111;
-  font-family: 'open sans', sans-serif;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
 }
 
 a {
   color: #222222;
   text-decoration: none;
   font-weight: 500;
-}
-
-.contenedor {
-  max-width: 1000px;
-  width: 90%;
-  margin: auto;
-  padding: 50px 0;
 }
 
 nav {
@@ -49,12 +36,18 @@ nav {
   transition: .3s ease all;
   -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
           box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+  background-image: url("../img/logoGedrix.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
 }
 
 body.dark nav {
   background: #222222;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+  background-image: url("../img/bitmap.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
 }
 
 body.dark nav a {
@@ -87,7 +80,8 @@ nav .enlaces a:hover {
   color: #707070;
 }
 
-.switch {
+/*********/
+.boton-dark {
   background: #394361;
   border-radius: 1000px;
   border: none;
@@ -99,7 +93,7 @@ nav .enlaces a:hover {
   outline: none;
 }
 
-.switch::after {
+.boton-dark::after {
   content: "";
   display: block;
   width: 30px;
@@ -116,17 +110,17 @@ nav .enlaces a:hover {
           box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.switch.active {
+.boton-dark.activar {
   background: #e9ec08;
   color: #000;
 }
 
-.switch.active::after {
+.boton-dark.activar::after {
   right: 0;
   left: unset;
 }
 
-.switch span {
+.boton-dark span {
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -135,95 +129,94 @@ nav .enlaces a:hover {
   color: #fff;
 }
 
-.grid {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 40px 20px;
-  -ms-grid-columns: 2fr 2fr 2fr;
-      grid-template-columns: 2fr 2fr 2fr;
-  padding: 40px 0;
+.titulo {
+  text-align: center;
+  font-size: 40px;
+  color: #111111;
+  margin-top: 100px;
+  font-weight: 100;
 }
 
-.grid .card {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 5px;
-  -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
-          box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+body.dark .titulo {
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 430ox;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  position: relative;
-  min-height: 195px;
-  margin-top: 50px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
 }
 
-body.dark .grid .card {
+body.dark .container {
   background: #222222;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
 }
 
-.grid .card img {
-  vertical-align: top;
-  border-radius: 7px;
-  position: absolute;
-  top: -50px;
-  width: calc(100% - 40px);
-  max-height: 165px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.grid .card .botones {
-  width: 100%;
-  margin-top: 20px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-.grid .card .botones .boton {
-  padding: 10px;
-  color: #fff;
-  width: 100%;
-  display: block;
-  background: #111111;
+.container .card {
+  background: #ffffff;
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
   text-align: center;
-  border-radius: 5px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
-.grid .card .botones .boton.primario {
-  background: #3E60E9;
+body.dark .container .card {
+  background: #5a5858;
 }
 
-.grid .card .botones .boton.primario:hover {
-  background: #254BE6;
+.container .card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.grid .card .botones .boton.secundario {
-  background: #C8C8C8;
-  color: #fff;
+.container .card img {
+  width: 330px;
+  height: 220px;
 }
 
-.grid .card .botones .boton.secundario:hover {
-  background: #ACABAB;
+.container .card h4 {
+  font-weight: 600;
 }
 
-body.dark .grid .card .botones .boton.secundario {
-  background: #b6f172;
+body.dark .container .card h4 {
+  color: #ffffff;
 }
 
-body.dark .grid .card .botones .boton.secundario:hover {
-  background: #a2e47b;
+.container .card p {
+  padding: 0 1rem;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+body.dark .container .card p {
+  color: #ffffff;
+}
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3E60E9;
+}
+
+body.dark .container .card a {
+  color: #3E60E9;
 }
 /*# sourceMappingURL=estilos.css.map */
