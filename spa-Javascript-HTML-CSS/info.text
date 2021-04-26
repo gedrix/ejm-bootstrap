@@ -1,8 +1,0 @@
-crear un archivo base src index.html, .css, .js
-
-luego instalar npm install --save-dev webpack -dev
-luego en consola mismo ejecutar npx webpack para crear la carpeta dist
-instalar npm install --save-dev html-webpack-plugin
-npm install --save-dev css-loader
-npm i style-loader -D
-para ejecutar el proyecto usamos npx webpack serve
