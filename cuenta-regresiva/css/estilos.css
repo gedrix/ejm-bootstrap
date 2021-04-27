@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img{
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+
+body {
+	color: #0b0b0c;
+    font-family: 'Cabin Sketch';
+}
+
+
+
+/*  ----- cuerpo ----- */
+.cuerpo {
+	width: 100%;
+	background:#231733;
+	min-height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: .5s ease-out all;
+}
+
+.cuerpo.oculto {
+	transform: translateY(100%);
+}
+
+.cuerpo .header {
+	margin-bottom: 100px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.header-titulo {
+	font-size: 50px;
+	font-size: 900;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.cuerpo .header .header-cuerpo {
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+}
+
+
+
+/* ----- MAIN ----- */
+main {
+	max-width: 1000px;
+	margin: auto;
+	width: 90%;
+	padding: 60px 0;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: left;
+}
+
+
+
+/*  ----- Cuenta Regresiva ----- */
+#cuenta {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.simply-section {
+	background: #fff;
+	width: 180px;
+	height: 180px;
+	margin: 0 20px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.simply-amount {
+	display: block;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.simply-word {
+	font-weight: 300;
+	font-size: 30px;
+}
+
+
+
+/*----- REDES SOCIALES ----- */
+
+.rs-fb{
+	background:#243892;padding:12px 0;
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	border-radius: 141px;
+	
+}
+.rs-tw{
+	background:#243892;padding:12px 0;
+	color: rgb(243, 243, 243);
+	font-size: 30px;
+	border-radius: 141px;
+
+}
+.rs-in{
+	background:#e25353;padding:12px 0;
+	color: rgb(240, 240, 240);
+	font-size: 30px;
+	border-radius:141px;
+
+}
